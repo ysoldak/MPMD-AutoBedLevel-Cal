@@ -204,7 +204,7 @@ def main():
         #port.write(('M92 X{0} Y{0} Z{0}\n'.format(str(step_mm))).encode())
         #out = port.readline().decode()
 
-        print ('Setting up M665 L{0} R{1}\n').format(str(l_value), str(r_value))
+        print ('Setting up M665 L{0} R{1}\n'.format(str(l_value), str(r_value)))
         port.write(('M665 L{0} R{1}\n'.format(str(l_value), str(r_value))).encode())
         out = port.readline().decode()
 
